@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'HanyiSentyScholar';
+    src: url('../font/HanyiSentyScholar.ttf') format('truetype'),
+    url('../font/HanyiSentyScholar.eot') format('embedded-opentype'),
+    url('../font/HanyiSentyScholar.woff') format('woff');
+}
+
+body{
+    background-color: white;
+    font-family: 'HanyiSentyScholar';
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*介紹欄*/
+header {
+    background-image: url(../img/佳句.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: 200px;
+    left: 60px;
+    top: 100px;
+    bottom: 10px;
+    width: 400px;
+    color: white;
+    float: left;
+    z-index: -1;
+}
+
+/*大頭照*/
+.myphoto{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -3%;
+    left: 0%;
+}
+
+/*自介*/
+.aboutme{
+    font-size: 20px;
+    position: relative;
+    top: -5%;
+    left: -1%;
+}
+
+/*佳句*/
+.word{
+    color: white;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    position: relative;
+    top: -5%;
+    left: 18%;
+}
+
+/*自介框*/
+.text-box1{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border: 10px solid #F0F0F0;
+    position: relative;
+    left: 20%;
+}
+
+/*內文*/
+h2{
+    text-align: center;
+}
+
+/*經歷框*/
+.text-box2{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border: 10px solid #F0F0F0;
+    position: relative;
+    left: 50%;
+}
+
+/*上下背景*/
+.bgp1{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.bgp2{
+    margin: 0px;
+    padding: 0px;
+    text-align: right ;
+}
+/*<img src="assets/img/背景圖2.png" width="364" height="150">*/
