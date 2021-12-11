@@ -6,6 +6,9 @@
 }
 
 body{
+    background-image: url(../img/網站背景.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
     background-color: white;
     font-family: 'HanyiSentyScholar';
     font-size: 25px;
@@ -13,7 +16,10 @@ body{
     padding: 0px;
 }
 
-
+/*超連結*/
+a{ 
+    text-decoration: none;
+}
 
 /*介紹欄*/
 header {
@@ -32,18 +38,17 @@ header {
 
 /*大頭照*/
 .myphoto{
-    width: 200px;
-    height: 200px;
+    width: 180px;
     position: relative;
-    top: -3%;
-    left: 0%;
+    top: 1%;
+    left: 4%;
 }
 
 /*自介*/
 .aboutme{
     font-size: 20px;
     position: relative;
-    top: -5%;
+    top: -3%;
     left: -1%;
 }
 
@@ -53,7 +58,7 @@ header {
     font-size: 20px;
     writing-mode: vertical-rl;
     position: relative;
-    top: -5%;
+    top: -3%;
     left: 18%;
 }
 
@@ -68,9 +73,29 @@ header {
     left: 20%;
 }
 
-/*內文*/
+.text-box1:hover{
+    background-color: #F0F0F0;
+    border: 10px solid white;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+
+/*自介內文*/
 h2{
     text-align: center;
+}
+
+/*icon*/
+.icon{
+    width: 30px;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.icon:hover{
+    width: 50px;
+    transition: all 0.6s;
+    transform: scale(1.1);
 }
 
 /*經歷框*/
@@ -81,7 +106,219 @@ h2{
     padding-bottom: 10px;
     border: 10px solid #F0F0F0;
     position: relative;
-    left: 50%;
+    left: 60%;
+}
+
+.text-box2:hover{
+    background-color: #F0F0F0;
+    border: 10px solid white;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+
+/*經歷內文*/
+.change{
+    font-size: 25px;
+    color: black;
+}
+
+.change:hover{
+    background-color: #113355;
+    border-radius: 10px;
+    color: white;
+}
+
+.work{
+    text-align: center;
+}
+
+.work-text1{
+    font-size: 15px;
+    background-color: white;
+    border: 10px solid #113355;
+    border-radius: 20px;
+    position: absolute;
+    left: -500px;
+    top: -20px;
+    width: 500px;
+    transition: .2s ease;
+    opacity: 0;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.work:hover .work-text1 {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.work-text2{
+    font-size: 15px;
+    background-color: white;
+    border: 10px solid #113355;
+    border-radius: 20px;
+    position: absolute;
+    left: -500px;
+    top: 20px;
+    width: 500px;
+    transition: .2s ease;
+    opacity: 0;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.work:hover .work-text2 {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.work-text3{
+    font-size: 15px;
+    background-color: white;
+    border: 10px solid #113355;
+    border-radius: 20px;
+    position: absolute;
+    left: -500px;
+    top: 70px;
+    width: 500px;
+    transition: .2s ease;
+    opacity: 0;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.work:hover .work-text3 {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.work-text4{
+    font-size: 15px;
+    background-color: white;
+    border: 10px solid #113355;
+    border-radius: 20px;
+    position: absolute;
+    left: -500px;
+    top: 90px;
+    width: 500px;
+    transition: .2s ease;
+    opacity: 0;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.work:hover .work-text4 {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.work-text5{
+    font-size: 15px;
+    background-color: white;
+    border: 10px solid #113355;
+    border-radius: 20px;
+    position: absolute;
+    left: -500px;
+    top: 110px;
+    width: 500px;
+    transition: .2s ease;
+    opacity: 0;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.work:hover .work-text5 {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*專長框*/
+.text-box3{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border: 10px solid #F0F0F0;
+    position: relative;
+    left: 20%;
+}
+
+.text-box3:hover{
+    background-color: #F0F0F0;
+    border: 10px solid white;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+
+.skill-word{
+    font-family: "標楷體";
+}
+
+/*動畫*/
+@keyframes bar1{
+    from{width: 0%;}
+    to{width: 90%;}
+}
+
+@keyframes bar2{
+    from{width: 0%;}
+    to{width: 90%;}
+}
+
+@keyframes bar3{
+    from{width: 0%;}
+    to{width: 45%;}
+}
+
+.html {
+    background-color: white;
+    border: 5px solid #F0F0F0;
+    border-radius: 5px;
+    animation: bar1 4s linear;
+    width: 90%;
+    animation-iteration-count: infinite;
+    margin: 10px;
+}
+
+.css {
+    background-color: white;
+    border: 5px solid #F0F0F0;
+    border-radius: 5px;
+    animation: bar2 4s linear;
+    width: 90%;
+    animation-iteration-count: infinite;
+    margin: 10px;
+}
+
+.java {
+    background-color: white;
+    border: 5px solid #F0F0F0;
+    border-radius: 5px;
+    animation: bar3 4s linear;
+    width: 90%;
+    animation-iteration-count: infinite;
+    margin: 10px;
+}
+
+.text-box3:hover .html{
+    background-color: white;
+    border: 10px solid #113355;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.text-box3:hover .css{
+    background-color: white;
+    border: 10px solid #113355;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+.text-box3:hover .java{
+    background-color: white;
+    border: 10px solid #113355;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
+}
+
+/*經歷框*/
+.text-box4{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border: 10px solid #F0F0F0;
+    position: relative;
+    left: 60%;
+}
+
+.text-box4:hover{
+    background-color: #F0F0F0;
+    border: 10px solid white;
+    box-shadow: 4px 4px 10px rgb(61 61 59);
 }
 
 /*上下背景*/
@@ -96,4 +333,3 @@ h2{
     padding: 0px;
     text-align: right ;
 }
-/*<img src="assets/img/背景圖2.png" width="364" height="150">*/
