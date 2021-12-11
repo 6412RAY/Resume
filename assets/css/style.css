@@ -71,6 +71,18 @@ header {
     border: 10px solid #F0F0F0;
     position: relative;
     left: 20%;
+    animation: test;
+    animation-duration: 5s;
+}
+
+@keyframes test{
+    0%{
+        margin-top: 800px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .text-box1:hover{
